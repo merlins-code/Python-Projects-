@@ -8,7 +8,6 @@ except ValueError:
     print("Thats not a number. Try again.")
 except Exception:
     print("Something went wrong.")
-finally:
     
 
 
