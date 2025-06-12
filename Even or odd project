@@ -1,0 +1,10 @@
+# get the number 
+
+number = int(input("Tell me a number and I will tell you if it's even or odd:\n"))
+
+# even or odd 
+
+if number % 2 == 0:
+    print("Even")
+else:
+    print("odd")
