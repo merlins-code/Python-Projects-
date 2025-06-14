@@ -85,11 +85,6 @@ while True:
     if checkacross(board) is True:
         print("X wins!")
         break
-    elif checkdown(board) is True:
-        print("X Wins!")
-        break
-    elif checkdiaganal(board) is True:
-        print("X Wins!=")
 
     
     
