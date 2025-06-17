@@ -1,22 +1,13 @@
+# First step
 
-list = []
 
-# ask user for data to enter
-
-while True:
-  data = input("What would you like to save")
-  list.append(data)
+my_list = []
+num_items = int(input("Enter the number of items:\n "))
+for i in range(num_items):
+    item = input(f"Enter item {i+1}:\n ")
+    my_list.append(item)
+print(my_list)
   
-# Do you have more data?
-
-  go = input("Do you have more to enter? y/n: ")
-  if go.lower() == "n":
-      break
-# Reprint list
-
-print(list)
-  
-      
   
 
 
