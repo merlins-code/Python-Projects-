@@ -25,19 +25,25 @@ for row in range(size):
 
 
 # # Loop through the outer list of the board.
-
+for i in range(len(board)):
+            
 
 
 # # loop through the inner list of each row.
-
-
+  for j in board[i]:
 
 # # Print the value of each cell in the row seperated with a pipe
-
+    print( j, end= " | ")
+  print()
 
                  
 
 # # Print  horizontal line after each row
+
+  print("-" * 10)
+
+
+
 
 
 
