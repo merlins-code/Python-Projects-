@@ -21,7 +21,7 @@ for row in range(size):
 # # Append an empty string to each row for each column.
 
         
-        
+        board[row].append("")
 
 
 # # Loop through the outer list of the board.
@@ -32,12 +32,10 @@ for row in range(size):
 
 
 
-# # Print the value of wach cell in the row seperated with a pipe
+# # Print the value of each cell in the row seperated with a pipe
 
 
-                  
-
-
+                 
 
 # # Print  horizontal line after each row
 
