@@ -30,18 +30,20 @@ for i in range(len(board)):
 
 
 # # loop through the inner list of each row.
-  for j in board[i]:
+  for j in range(len(board[i])):
+      
+          
+      
 
 # # Print the value of each cell in the row seperated with a pipe
-    print( j, end= " | ")
+      if j < size - 1:
+          print(" | ", end="")
   print()
-
-                 
 
 # # Print  horizontal line after each row
 
-  print("-" * 10)
-
+  if i < size - 1:
+      print("-" * (size * 4 - 4))
 
 
 
