@@ -34,7 +34,6 @@ for i in range(len(board)):
       
           
       
-
 # # Print the value of each cell in the row seperated with a pipe
       if j < size - 1:
           print(" | ", end="")
@@ -43,7 +42,8 @@ for i in range(len(board)):
 # # Print  horizontal line after each row
 
   if i < size - 1:
-      print("-" * (size * 4 - 4))
+      print("-" * (size * 3 - 3))
+
 
 
 
