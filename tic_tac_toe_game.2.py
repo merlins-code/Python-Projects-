@@ -1,51 +1,31 @@
-# # Create a variable to store the board and set it to an empty list.
-
 board = []
-
-# #Create the variable to store the size of the board and set it to 3.
-
 size = 3
+rungame = True
 
-# # Loop Through the range of the size of the board
-
-for row in range(size):
-
-# # Append an empty list to the board for each row.
-
+def printboard(board):
+  for row in range(size):
     board.append([])
-
-# # loop through the rang of the size of the board.
-
-    for col in range(size):
-
-# # Append an empty string to each row for each column.
-
-        
+    for col in range(size):        
         board[row].append("")
-
-
-# # Loop through the outer list of the board.
-for i in range(len(board)):
-            
-
-
-# # loop through the inner list of each row.
-  for j in range(len(board[i])):
-      
-          
-      
-# # Print the value of each cell in the row seperated with a pipe
+        
+  for i in range(len(board)):
+    for j in range(len(board[i])):
       if j < size - 1:
           print(" | ", end="")
-  print()
-
-# # Print  horizontal line after each row
-
-  if i < size - 1:
+    print()
+    if i < size - 1:
       print("-" * (size * 3 - 3))
-
-
-
-
-
-
+      
+def playerinput(board):
+        try:
+          inrow = int(input("what row do you pick?\n"))
+          incol = int(input("What collumn do you pick?\n"))
+          if incol <= size and inrow <= size:
+            print(f"you picked\n{inrow}:{incol}")
+          else:
+            print("Thats outside of the board size")
+        except ValueError:
+            print("Thats not a number so try again.")
+            
+printboard(board)
+playerinput(board)
