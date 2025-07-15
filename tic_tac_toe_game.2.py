@@ -13,16 +13,16 @@ rungame = True
 
 player = "X"
 
-# Create a variable to store the board. 
-# In this variable the board does a few things. I start out with brackets to say the board is going to be a list.
-# Then I use a second set of brackets to create a list of lists. In the second set of brackets I first create
-# an empty string then I use a for loop to create (three in this case) different lists inside of the list (rows).
-# Then I do another loop to say in each inner list create (3 in this case) of the empty strings (columns). The
-# empty string at the beginning is what is created in each index spot.
+# Create a variable to store the board.
+# In this variable, the board does a few things. I start with brackets to indicate that the board will be a list.
+# Then I use a second set of brackets to create a list of lists. In the second set of brackets, I first create
+# an empty string, then use a for loop to create (three in this case) different lists inside the main list (rows).
+# I use another loop to create (three in this case) empty strings in each inner list (columns).
+# The empty string at the beginning is what is placed in each index spot.
 
 board = [["" for i in range(size)] for i in range(size)]
 
-# Here I creat a Function to Formate and print the existing board.
+# Here I create a function to format and print the existing board.
 
 def printboard(board):  
   
